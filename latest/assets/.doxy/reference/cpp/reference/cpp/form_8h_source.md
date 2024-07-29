@@ -24,14 +24,19 @@
 
 #pragma once
 
+#include <functional>
+
 #include "endstone/message.h"
 
 namespace endstone {
 
+class Player;
+
 template <typename T>
 class Form {
 public:
-    explicit Form() {}
+    using OnCloseCallback = std::function<void(Player *)>;
+    explicit Form() = default;
 
     [[nodiscard]] Message getTitle() const
     {
@@ -44,8 +49,20 @@ public:
         return *static_cast<T *>(this);
     }
 
+    T &setOnClose(OnCloseCallback on_close)
+    {
+        on_close_ = std::move(on_close);
+        return *static_cast<T *>(this);
+    }
+
+    [[nodiscard]] OnCloseCallback getOnClose() const
+    {
+        return on_close_;
+    }
+
 protected:
     Message title_;
+    OnCloseCallback on_close_;
 };
 
 }  // namespace endstone

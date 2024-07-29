@@ -32,6 +32,7 @@
 * **content\_** ([**endstone::ActionForm**](classendstone_1_1ActionForm.md), [**endstone::MessageForm**](classendstone_1_1MessageForm.md))
 * **command\_map\_** ([**endstone::Command**](classendstone_1_1Command.md))
 * **cancelled\_** ([**endstone::Event**](classendstone_1_1Event.md))
+* **controls\_** ([**endstone::ModalForm**](classendstone_1_1ModalForm.md))
 * **children\_** ([**endstone::Permission**](classendstone_1_1Permission.md))
 * **command\_** ([**endstone::PlayerCommandEvent**](classendstone_1_1PlayerCommandEvent.md), [**endstone::ServerCommandEvent**](classendstone_1_1ServerCommandEvent.md))
 * **commands\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
@@ -49,14 +50,16 @@
 * **DarkPurple** ([**endstone::ColorFormat**](structendstone_1_1ColorFormat.md))
 * **DarkRed** ([**endstone::ColorFormat**](structendstone_1_1ColorFormat.md))
 * **description\_** ([**endstone::Command**](classendstone_1_1Command.md), [**endstone::Permission**](classendstone_1_1Permission.md), [**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
+* **default\_index\_** ([**endstone::Dropdown**](classendstone_1_1Dropdown.md))
 * **DefaultPermission** ([**endstone::Permission**](classendstone_1_1Permission.md))
-* **default\_value\_** ([**endstone::Permission**](classendstone_1_1Permission.md))
+* **default\_value\_** ([**endstone::Permission**](classendstone_1_1Permission.md), [**endstone::Slider**](classendstone_1_1Slider.md), [**endstone::Toggle**](classendstone_1_1Toggle.md))
 * **death\_message\_** ([**endstone::PlayerDeathEvent**](classendstone_1_1PlayerDeathEvent.md))
 * **data\_folder\_** ([**endstone::Plugin**](classendstone_1_1Plugin.md))
 * **default\_permission\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
 * **depend\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
 * **dimension\_** ([**endstone::Position**](classendstone_1_1Position.md))
 * **data** ([**endstone::Skin::ImageData**](structendstone_1_1Skin_1_1ImageData.md), [**endstone::UUID**](classendstone_1_1UUID.md))
+* **default\_text\_** ([**endstone::TextInput**](classendstone_1_1TextInput.md))
 
 
 ## e
@@ -90,7 +93,7 @@
 
 ## i
 
-* **icon\_** ([**endstone::Button**](classendstone_1_1Button.md))
+* **icon\_** ([**endstone::ActionForm::Button**](classendstone_1_1ActionForm_1_1Button.md), [**endstone::ModalForm**](classendstone_1_1ModalForm.md))
 * **Italic** ([**endstone::ColorFormat**](structendstone_1_1ColorFormat.md))
 * **ignore\_cancelled\_** ([**endstone::EventHandler**](classendstone_1_1EventHandler.md))
 
@@ -98,6 +101,7 @@
 ## l
 
 * **LightPurple** ([**endstone::ColorFormat**](structendstone_1_1ColorFormat.md))
+* **label\_** ([**endstone::Dropdown**](classendstone_1_1Dropdown.md), [**endstone::Slider**](classendstone_1_1Slider.md), [**endstone::TextInput**](classendstone_1_1TextInput.md), [**endstone::Toggle**](classendstone_1_1Toggle.md))
 * **loader\_** ([**endstone::Plugin**](classendstone_1_1Plugin.md))
 * **logger\_** ([**endstone::Plugin**](classendstone_1_1Plugin.md))
 * **load\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
@@ -126,6 +130,8 @@
 * **max\_players\_** ([**endstone::ServerListPingEvent**](classendstone_1_1ServerListPingEvent.md))
 * **minecraft\_version\_network\_** ([**endstone::ServerListPingEvent**](classendstone_1_1ServerListPingEvent.md))
 * **motd\_** ([**endstone::ServerListPingEvent**](classendstone_1_1ServerListPingEvent.md))
+* **max\_** ([**endstone::Slider**](classendstone_1_1Slider.md))
+* **min\_** ([**endstone::Slider**](classendstone_1_1Slider.md))
 
 
 ## n
@@ -138,7 +144,11 @@
 
 ## o
 
+* **on\_click\_** ([**endstone::ActionForm::Button**](classendstone_1_1ActionForm_1_1Button.md))
+* **on\_submit\_** ([**endstone::ActionForm**](classendstone_1_1ActionForm.md), [**endstone::MessageForm**](classendstone_1_1MessageForm.md), [**endstone::ModalForm**](classendstone_1_1ModalForm.md))
 * **Obfuscated** ([**endstone::ColorFormat**](structendstone_1_1ColorFormat.md))
+* **options\_** ([**endstone::Dropdown**](classendstone_1_1Dropdown.md))
+* **on\_close\_** ([**endstone::Form**](classendstone_1_1Form.md))
 * **owner\_** ([**endstone::PluginCommand**](classendstone_1_1PluginCommand.md))
 
 
@@ -156,6 +166,7 @@
 * **provides\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
 * **ping\_response\_** ([**endstone::ServerListPingEvent**](classendstone_1_1ServerListPingEvent.md))
 * **port\_** ([**endstone::SocketAddress**](classendstone_1_1SocketAddress.md))
+* **placeholder\_** ([**endstone::TextInput**](classendstone_1_1TextInput.md))
 
 
 ## r
@@ -170,18 +181,20 @@
 
 ## s
 
+* **submit\_button\_text\_** ([**endstone::ModalForm**](classendstone_1_1ModalForm.md))
 * **server\_** ([**endstone::Plugin**](classendstone_1_1Plugin.md), [**endstone::PluginLoader**](classendstone_1_1PluginLoader.md))
 * **soft\_depend\_** ([**endstone::PluginDescription**](classendstone_1_1PluginDescription.md))
 * **sender\_** ([**endstone::ServerCommandEvent**](classendstone_1_1ServerCommandEvent.md))
 * **server\_guid\_** ([**endstone::ServerListPingEvent**](classendstone_1_1ServerListPingEvent.md))
 * **skin\_data\_** ([**endstone::Skin**](classendstone_1_1Skin.md))
 * **skin\_id\_** ([**endstone::Skin**](classendstone_1_1Skin.md))
+* **step\_** ([**endstone::Slider**](classendstone_1_1Slider.md))
 
 
 ## t
 
+* **text\_** ([**endstone::ActionForm::Button**](classendstone_1_1ActionForm_1_1Button.md), [**endstone::Label**](classendstone_1_1Label.md))
 * **to\_** ([**endstone::ActorTeleportEvent**](classendstone_1_1ActorTeleportEvent.md), [**endstone::ThunderChangeEvent**](classendstone_1_1ThunderChangeEvent.md), [**endstone::WeatherChangeEvent**](classendstone_1_1WeatherChangeEvent.md))
-* **text\_** ([**endstone::Button**](classendstone_1_1Button.md))
 * **title\_** ([**endstone::Form**](classendstone_1_1Form.md))
 * **type\_** ([**endstone::ServerLoadEvent**](classendstone_1_1ServerLoadEvent.md))
 * **translate\_** ([**endstone::Translatable**](classendstone_1_1Translatable.md))

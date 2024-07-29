@@ -1120,6 +1120,19 @@
             
             
             <li class="md-nav__item">
+    <a href="#endstone.Player.close_form" class="md-nav__link">
+      <span class="md-ellipsis">
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;close_form
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+</li>
+            
+            
+            
+            <li class="md-nav__item">
     <a href="#endstone.Player.give_exp" class="md-nav__link">
       <span class="md-ellipsis">
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;give_exp
@@ -2410,6 +2423,19 @@
             
             
             <li class="md-nav__item">
+    <a href="#endstone.Player.close_form" class="md-nav__link">
+      <span class="md-ellipsis">
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;close_form
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+</li>
+            
+            
+            
+            <li class="md-nav__item">
     <a href="#endstone.Player.give_exp" class="md-nav__link">
       <span class="md-ellipsis">
         <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;give_exp
@@ -2890,12 +2916,12 @@
   </span>
 
 <a href="#endstone.Player.ping" class="headerlink" title="Permanent link">&para;</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ping</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="datetime.timedelta" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta">timedelta</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ping</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
-      <p>Gets the player's average ping.</p>
+      <p>Gets the player's average ping in milliseconds.</p>
     </div>
 
 </div>
@@ -2994,6 +3020,25 @@
 </div>
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="endstone.Player.close_form" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">close_form</span>
+
+
+<a href="#endstone.Player.close_form" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">close_form</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>Closes the forms that are currently open for the player.</p>
+
+    </div>
+
+</div>
 
 <div class="doc doc-object doc-function">
 
@@ -3098,7 +3143,9 @@
 
 
 <a href="#endstone.Player.send_form" class="headerlink" title="Permanent link">&para;</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">send_form</span><span class="p">(</span><span class="n">form</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="endstone._internal.endstone_python.MessageForm" href="../form/#endstone.form.MessageForm">MessageForm</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="endstone._internal.endstone_python.ActionForm" href="../form/#endstone.form.ActionForm">ActionForm</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">send_form</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">form</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="endstone._internal.endstone_python.MessageForm" href="../form/#endstone.form.MessageForm">MessageForm</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="endstone._internal.endstone_python.ActionForm" href="../form/#endstone.form.ActionForm">ActionForm</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="endstone._internal.endstone_python.ModalForm" href="../form/#endstone.form.ModalForm">ModalForm</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
